@@ -11,8 +11,9 @@ void basicVariable() {
   getType(name);
 }
 
-void getType(dynamic a) {
+getType(dynamic a) {
   print(a.runtimeType);
+  return a;
 }
 
 void getLine(n) {
