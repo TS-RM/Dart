@@ -19,3 +19,8 @@ class A {
 int calculate() {
   return 6 * 7;
 }
+
+num hesap() {
+  var intiger = 12.2;
+  return intiger;
+}
