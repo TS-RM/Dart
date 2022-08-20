@@ -1,4 +1,4 @@
-import 'package:basics/basics.dart';
+import 'basics.dart';
 
 getlist() {
   List<int> ids = [1, 2, 3, 4];
