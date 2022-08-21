@@ -1,6 +1,5 @@
-import 'package:basics/classes.dart';
-import 'package:basics/generic.dart';
 import 'package:basics/notes/basics.dart';
+import 'package:basics/notes/generic.dart';
 import 'package:basics/src/singletone.dart';
 
 void main(List<String> arguments) {
