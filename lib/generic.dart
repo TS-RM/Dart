@@ -25,3 +25,39 @@ class Animals<E> {
     return "animal_a $first, Animal_b $second, Animal_c $third";
   }
 }
+
+class Stack<T> {
+  final List<T> _stack = [];
+  T get peak => _stack.last;
+  int get lenght => _stack.length;
+  bool get canPop => _stack.isNotEmpty;
+
+  T pop() {
+    final T last = _stack.last;
+    _stack.removeLast();
+    return last;
+  }
+
+  void push(T value) => _stack.add(value);
+
+  @override
+  String toString() {
+    return '${_stack.length}';
+  }
+}
+
+void main(List<String> args) {
+  var stackInt = Stack<int>();
+  var stackString = Stack<String>();
+
+  stackString.push("a");
+  stackString.push("B");
+  stackString.push("c");
+  stackString.pop();
+
+  stackInt.push(1);
+  stackInt.push(3);
+  stackInt.push(5);
+  stackInt.pop();
+  print(stackString.peak);
+}
